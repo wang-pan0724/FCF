@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>FCF官网</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top navBackground">
+    <img class="logo" src="images/logo.png" alt="FCF官网">
+    <ul class="navstyle">
+        <li>
+            <a href="#contactUs">联系我们 <br/>Contact us</a>
+        </li>
+        <li>
+            <a href="#team">团队介绍 <br/>Team</a>
+        </li>
+        <li>
+            <a href="#projectSchedule">项目进度 <br/>Project schedules</a>
+        </li>
+        <li id="book">
+            <a href="#whiteBook">白皮书 <br/>White book</a>
+        </li>
+        <li>
+            <a href="#display">产品展示 <br/>Display</a>
+        </li>
+
+        <li>
+            <a href="#introduction">项目介绍 <br/>Introduction</a>
+        </li>
+        <li class="active">
+            <a href="#home">首页 <br/>Home</a>
+        </li>
+    </ul>
+</nav>
+<div id="home" class="page home">
+    <div class="circle">
+        <img class="img img-responsive" src="images/qiu.png" draggable="false" alt=""/>
+        <img class="img-responsive star" src="images/star.png" draggable="false" alt=""/>
+        <img class="homeText img-responsive" src="images/hometext.png" draggable="false" alt=""/>
+    </div>
+    <img draggable="false" class="img-responsive homeBottomText" src="images/homeBottomText.png" alt=""/>
+</div>
+<div id="introduction" class="page introduction">
+    <img draggable="false" class="img-responsive introductionimg" src="images/introductionimg.png" alt=""/>
+    <img draggable="false" class="img-responsive introductiontext" src="images/introductiontext.png" alt=""/>
+</div>
+<div id="display" class="page display">
+    <div class="disLeft">
+        <img class="img-responsive" src="images/phoneText.png" draggable="false" alt="">
+    </div>
+    <div class="disRig">
+        <img class="img-responsive" src="images/phoneShow.png" draggable="false" alt="">
+    </div>
+</div>
+<div id="projectSchedule" class="page projectSchedule">
+    <div class="text-center projectTitle">
+        <img draggable="false" class="img-responsive" src="images/projectTitle.png" alt=""/>
+    </div>
+    <div class="peojectContant">
+
+    </div>
+</div>
+<div id="team" class="page team">
+
+</div>
+<div id="contactUs" class="page contactUs">
+
+</div>
+<script>
+    window.onload=function(){
+
+        $('.navstyle li').click(function () {
+            var f = this;
+            $('.navstyle li').each(function () {
+                this.className = this == f ? 'active' : ''
+            });
+        });
+
+        $("#book").click(function(){
+            window.open("FCF白皮书v1.0.pdf")
+        })
+
+    }
+</script>
+</body>
+</html>

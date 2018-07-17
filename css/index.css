@@ -1,0 +1,255 @@
+
+body{
+    background: #010101;
+}
+
+.navBackground{
+    background: rgba(1,1,1,0);
+    padding: 0px 108px;
+    height: 106px;
+    box-sizing: border-box;
+}
+img {
+    -webkit-touch-callout: none; /* iOS Safari */
+
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+
+    -khtml-user-select: none; /* Konqueror */
+
+    -moz-user-select: none; /* Firefox */
+
+    -ms-user-select: none; /* Internet Explorer/Edge */
+
+    user-select: none;
+}
+.navbar-default{
+    border: none;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 600%;
+}
+.page {
+    width: 100%;
+    height: 16.666668%;
+}
+.logo{
+    margin-top: 28px;
+}
+
+.navstyle{
+    margin-top: 28px;
+    float: right;
+    width: 900px;
+}
+
+.navstyle li{
+    position: relative;
+    list-style: none;
+    float: right;
+    margin-right: 57px;
+    text-align: center;
+}
+
+.navstyle li>a{
+    color: #585858;
+    text-decoration:none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.active>a{
+    color: #ffffff !important;
+}
+
+.active:before{
+    content: '';
+    width: 24px;
+    height: 3px;
+    background: -webkit-linear-gradient(left, #F3582E , #EE3030); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #F3582E, #EE3030); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #F3582E, #EE3030); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #F3582E, #EE3030); /* ��׼���﷨ */
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navstyle li:first-child{
+    margin-right: 0px;
+}
+
+.home,
+.introduction,
+.display,
+.projectSchedule,
+.team,
+.contactUs{
+    position: relative;
+    /*padding: 50px 0px;*/
+    background-image: url("../images/bj.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.home {
+    position: relative;
+}
+.home .circle{
+    position: relative;
+    top: 50%;
+    width: 35%;
+    margin: 0 auto;
+    transform: translateY(-60%);
+}
+
+.star{
+    position: absolute;
+    left:0px;
+    top: 0px;
+    animation: 3s starlight linear infinite;
+}
+
+.homeText{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    left: 50%;
+    transform: translateY(-46%) translateX(-51%);
+}
+
+.homeBottomText{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+}
+
+.introduction{
+    position: relative;
+}
+
+.introduction img{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+.introductionimg{
+    position: relative;
+    top: 50%;
+    transform: translateY(-55%);
+    animation: 5s introductionlight linear infinite;
+}
+
+.introductiontext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-55%) translateX(-50%);
+}
+
+.projectSchedule{
+    color: #ffffff;
+}
+
+.projectTitle{
+    padding-top: 10%;
+}
+
+.projectTitle img{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+.display {
+    position: relative;
+    overflow: hidden;
+}
+.disLeft {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+.disRig {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.peojectContant{
+
+}
+
+@-webkit-keyframes starlight
+{
+    0%{  opacity: 0.2}
+    60%{opacity: 1}
+    100%{opacity: 0.2}
+}
+
+@-webkit-keyframes introductionlight{
+    0%{  opacity: 0.1}
+    55%{opacity: 1}
+    100%{opacity: 0.1}
+}
+
+
+
+/* 大屏幕（大桌面显示器，大于等于  */
+@media (max-width: 1200px) {
+    .home .circle{
+        width: 67%;
+    }
+    .homeBottomText{
+        bottom: 10%;
+        width: 45%;;
+    }
+    .disLeft {
+        position: relative;
+        transform: translateY(0);
+        width: 60%;
+        left: 10%;top: 0;
+        margin-top: 140px;
+    }
+    .disRig {
+        position: relative;
+        transform: translateY(0);
+        left: 2%;top: 0;
+        width: 70%;
+        margin-top: 50px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于  */
+@media (max-width: 992px) {
+
+}
+
+/* 小屏幕（平板，大于等于  */
+@media (max-width: 760px) {
+    .home .circle{
+        width: 92%;
+    }
+    .homeBottomText{
+        bottom: 10%;
+        width: 62%;
+    }
+    .introduction img {
+        width: 95%;
+    }
+}

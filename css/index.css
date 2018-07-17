@@ -192,7 +192,28 @@ body {
 }
 
 .peojectContant{
-
+}
+.proTopCtn, .proBtmCtn {
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+ .proBtmCtn {
+    display: block;
+}
+.peojectContant > div > div{
+    float: left;
+}
+.itemShow {
+    /* width: 13% */
+}
+.hoverShow {
+    display: none;
+}
+.itemIcon {
+    /* width: 10%; */
 }
 
 @-webkit-keyframes starlight

@@ -1,3 +1,6 @@
+html,body {
+    min-width: 1400px;
+}
 
 body{
     background: #010101;
@@ -24,6 +27,7 @@ img {
 }
 .navbar-default{
     border: none;
+    min-width: 1400px;
 }
 html {
     width: 100%;
@@ -36,6 +40,7 @@ body {
 .page {
     width: 100%;
     height: 16.666668%;
+    overflow: hidden;
 }
 .logo{
     margin-top: 28px;
@@ -44,7 +49,7 @@ body {
 .navstyle{
     margin-top: 20px;
     float: right;
-    width: 900px;
+    width: 830px;
 }
 
 .navstyle li{
@@ -212,10 +217,11 @@ body {
 }
 .peojectContant > div > div{
     float: left;
+    position: relative;
 }
 
 .itemShow {
-    width: 19%;
+    /* width: 19%;
      background-image: url(../images/time.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -225,9 +231,53 @@ body {
     height: 208px;
     line-height: 208px;
     text-align: center;
-    overflow: hidden;
+    overflow: hidden; */
+}
+.peojectContant {
+    margin-top: 5%;
+}
+.hoverShow {
+    display: block;
+}
+.itemShow {
+    width: 13.4%;
+}
+.itemShow .xxe1 {
+    display: block;
+}
+.itemShow .xxe2 {
+    display: none;
 }
 
+.itemShow:hover .xxe1 {
+    display: none;
+}
+.itemShow:hover .xxe2 {
+    display: block;
+}
+.itemShow:hover .proAbs>div:nth-child(2) {
+    color: #fb4134;
+}
+.itemIcon {
+    width: 8.5%;
+    margin: 0 3%;
+}
+.proAbs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    top: 30%;
+}
+.proAbs >div {
+    margin: 5% 0;
+}
+.proAbs >div:nth-child(2) {
+    font-size: 14px;
+    width: 80%;
+    margin: 5% auto;
+}
 .itemShowBottom{
     display: block;
     height: 41px;
@@ -235,54 +285,103 @@ body {
 
 .itemShowBottom img{
     margin: 0 auto;
+    position: relative;
+    right: 7.5%;
 }
-
+.itemListBottonDetail > div:nth-child(2) img{
+    right: 6%;
+} 
+.itemListBottonDetail > div:nth-child(3) img{
+    right: 4%;
+} 
+.itemListBottonDetail > div:nth-child(4) img{
+    right: 2%;
+} 
 .itemShowDetail{
     position: relative;
     width: 100%;
 }
-
+.abslt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 4% 5%;
+}
+.abs1 {
+    font-size: 14px;
+    padding-left: 16px;
+    padding-top: 2%;
+}
+.abs2 {
+    font-size: 12px;
+    padding: 4%;
+    line-height: 20px;
+}
 .itemListBottonDetail{
     position: relative;
     width: 100%;
     padding: 0 5%;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .itemListBottonDetaillist{
     position: relative;
     width: 25%;
     float: left;
+    visibility: hidden;
 }
 
 .itemDatailImg{
-    position: absolute;
+    /* position: absolute;
     left: 0px;
-    top: 0px;
+    top: 0px; */
     width: 100%;
 }
-
-.hoverShow {
-    display: block;
-}
-.itemIcon {
-     width: 7%;
-}
-
-.team{
-    padding: 100px 0;
-}
-
-.team .item{
-    padding: 0 10%;
-}
-
 .team .list{
     width: 20%;
     float: left;
     margin-right: 6.66%
 }
-
+.slide {
+    position: relative;
+}
+ol.marked {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    padding: 10px 0;
+}
+ol.marked li {
+    width: 42px !important;
+    border: none !important;
+    border-radius: 5px 0px !important;
+    background-color: #161616 !important;
+    float: left;
+    margin: 0 10px;
+    height: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+ol.marked li.active {
+    background-color: #fc4a31 !important;
+    box-shadow: 0 0 5px #fc4a31;
+}
+.inner {
+    width: 300%;
+    position: absolute;
+    top: 30%;
+    transition: left 0.5s linear;
+    left: 0;
+}
+.inner .item {
+    float: left;
+    width: 33.3%;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
 .itemBack{
     background-image: url(../images/back.png);
     background-repeat: no-repeat;
@@ -293,7 +392,36 @@ body {
     height: 246px;
     overflow: hidden;
 }
+.named {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 40px;
+}
 
+.named:before {
+    content: '';
+    height: 15px;
+    border: 4px solid #fb4134;
+    border-radius: 0px 5px !important;
+    background-color: #fc4a31 !important;
+    box-shadow: 0 0 5px #fc4a31;
+    display: inline-block;
+    position: relative;
+    left: -20px;
+}
+.biaoqian {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 26px;
+}
+.lvli {
+    text-align: center;
+    color: #aaa;
+    margin-top: 20px;
+}
 .itemBack:hover{
     background-image: url(../images/backred.png);
     transform:scale(1.2);
@@ -317,24 +445,6 @@ body {
     right:6%;
     top: 50%;
     transform: translateY(-50%)；
-}
-
-.carousel-indicators .active{
-    width: 42px !important;
-    height: 10px !important;
-    background-color: #FC4631 !important;
-    /* box-shadow: #FC4631 1px 1px 1px 1px ; */
-}
-
-.carousel-indicators li{
-    width: 42px !important;
-    border:none !important;
-    border-radius: 5px 0px !important;
-    background-color: #161616 !important;
-}
-
-.carousel-inner{
-    overflow: inherit !important;
 }
 
 .contactUs{
@@ -368,10 +478,15 @@ body {
     -webkit-background-size: contain;
     -o-background-size: contain;
     background-position: center center;
-    height: 208px;
+    /* height: 208px; */
     padding: 25px 40px;
     box-sizing: border-box;
     color: #ffffff;
+}
+.erweima>div {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #fff;
 }
 
 .contantfont{
@@ -385,6 +500,7 @@ body {
     background-position: center center;
     text-align: center;
     color: #ffffff;
+    font-size: 16px;
 }
 
 .contantfontBottom{
@@ -397,7 +513,6 @@ body {
     width: 80%;
     margin: 5% auto;
 }
-
 .list:hover .listback{
     background-image: url(../images/contantred.png);
     transform:scale(1.2);
@@ -409,6 +524,14 @@ body {
 
 .list:hover .erweima{
     display: block;
+}
+
+.youxiang .erweima {
+    width: 320px;
+    height: 320px;
+}
+.youxiangText {
+    line-height: 190px;
 }
 
 @-webkit-keyframes starlight

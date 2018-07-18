@@ -273,6 +273,9 @@ body {
 .proAbs >div {
     margin: 5% 0;
 }
+.proAbs >div:nth-child(1) {
+    font-weight: bold;
+}
 .proAbs >div:nth-child(2) {
     font-size: 14px;
     width: 80%;

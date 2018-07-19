@@ -1,5 +1,5 @@
 html,body {
-    min-width: 1400px;
+    min-width: 1340px;
 }
 
 body{
@@ -27,7 +27,7 @@ img {
 }
 .navbar-default{
     border: none;
-    min-width: 1400px;
+    min-width: 1340px;
 }
 html {
     width: 100%;
@@ -311,9 +311,10 @@ body {
     padding: 4% 5%;
 }
 .abs1 {
-    font-size: 14px;
-    padding-left: 16px;
+    font-size: 12px;
+    padding-left: 10px;
     padding-top: 2%;
+    width: 40%;
 }
 .abs2 {
     font-size: 12px;
@@ -332,7 +333,7 @@ body {
     position: relative;
     width: 25%;
     float: left;
-    visibility: hidden;
+    /*visibility: hidden;*/
 }
 
 .itemDatailImg{
@@ -375,7 +376,7 @@ ol.marked li.active {
 .inner {
     width: 300%;
     position: absolute;
-    top: 30%;
+    top: 15%;
     transition: left 0.5s linear;
     left: 0;
 }
@@ -395,6 +396,23 @@ ol.marked li.active {
     height: 246px;
     overflow: hidden;
 }
+
+.people1{
+    display: block;
+}
+
+.people2{
+    display: none;
+}
+
+.itemBack:hover .people1{
+    display: none;
+}
+
+.itemBack:hover .people2{
+    display: block;
+}
+
 .named {
     text-align: center;
     font-size: 16px;

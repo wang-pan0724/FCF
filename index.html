@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example" data-offset="0">
+<body data-spy="scroll" data-target="#navbar-example" data-offset="94">
 
     <nav id="navbar-example" class="navbar navbar-default navbar-fixed-top navBackground">
         <img class="logo" src="images/logo.png" alt="FCF官网">
@@ -46,6 +46,7 @@
             </li>
         </ul>
     </nav>
+    <div class="main_box">
     <div id="demo7" class="page home">
         <div class="circle">
             <img class="img img-responsive" src="images/qiu.png" draggable="false" alt="" />
@@ -323,14 +324,20 @@
                 </div>
             </div>
         </div>
+
     </div>
-    <footer style="background: rgb(1,1,1); color: #fff;padding: 50px 0px">
-        <div class="text-center">网页最下面加一行：©2018 FCF. All rights reserved.</div>
-    </footer>
+        <p class="text-center footer">
+            ©2018 FCF. All rights reserved.
+        </p>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script></script>
     <script>
-        $('body').scrollspy({ target: '#navbar-example' });
+//        $('body').scrollspy({ target: '#navbar-example' });
         $("#book").click(function () {
             window.open("FCF白皮书v1.0(7).pdf")
         })
@@ -389,16 +396,6 @@
             }
         })
 
-//        $(".itemBack").hover(function() {
-////            $(this).index();
-//            var src = $(this)[0].children[0].attributes[0].nodeValue;
-//            var newSrc = src.substr(0,8)+"1.png";
-//            $(this)[0].children[0].attributes[0].nodeValue = newSrc;
-//        },function(){
-//            var src = $(this)[0].children[0].attributes[0].nodeValue;
-//            var newSrc = src.substr(0,8)+"2.png";
-//            $(this)[0].children[0].attributes[0].nodeValue = newSrc;
-//        })
     </script>
 </body>
 

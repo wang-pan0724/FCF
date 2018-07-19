@@ -37,10 +37,16 @@ body {
     width: 100%;
     height: 600%;
 }
+
+.main_box{
+    position: relative;
+    padding-top: 94px;
+}
 .page {
     width: 100%;
     height: 16.666668%;
     overflow: hidden;
+    min-height: 640px;
 }
 .logo{
     margin-top: 28px;
@@ -104,7 +110,6 @@ body {
 .team,
 .contactUs{
     position: relative;
-    /*padding: 50px 0px;*/
     background-image: url("../images/bj.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -122,6 +127,10 @@ body {
     width: 35%;
     margin: 0 auto;
     transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
 }
 
 .star{
@@ -137,6 +146,10 @@ body {
     width: 50%;
     left: 50%;
     transform: translateY(-46%) translateX(-51%);
+    -moz-transform: translateY(-46%) translateX(-51%);
+    -o-transform: translateY(-46%) translateX(-51%);
+    -ms-transform: translateY(-46%) translateX(-51%);
+    -webkit-transform: translateY(-46%) translateX(-51%);
 }
 
 .homeBottomText{
@@ -144,6 +157,10 @@ body {
     bottom: 6%;
     left: 50%;
     transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
     width: 30%;
 }
 
@@ -160,7 +177,11 @@ body {
 .introductionimg{
     position: relative;
     top: 50%;
-    transform: translateY(-55%);
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%); 	/* IE 9 */
+    -moz-transform:translateY(-50%); 	/* Firefox */
+    -webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+    -o-transform:translateY(-50%);
     animation: 5s introductionlight linear infinite;
 }
 
@@ -169,6 +190,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translateY(-55%) translateX(-50%);
+    -moz-transform: translateY(-55%) translateX(-50%);
+    -o-transform: translateY(-55%) translateX(-50%);
+    -webkit-transform: translateY(-55%) translateX(-50%);
+    -ms-transform: translateY(-55%) translateX(-50%);
 }
 
 .projectSchedule{
@@ -192,14 +217,22 @@ body {
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%); 	/* IE 9 */
+    -moz-transform:translateY(-50%); 	/* Firefox */
+    -webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+    -o-transform:translateY(-50%);
     width: 50%;
 }
 .disRig {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%); 	/* IE 9 */
+    -moz-transform:translateY(-50%); 	/* Firefox */
+    -webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+    -o-transform:translateY(-50%);
     width: 50%;
 }
 
@@ -210,6 +243,10 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 82%;
 }
  .proBtmCtn {
@@ -333,7 +370,7 @@ body {
     position: relative;
     width: 25%;
     float: left;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
 .itemDatailImg{
@@ -354,7 +391,11 @@ ol.marked {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateX(-50%);
+    transform:translateX(-50%);
+    -ms-transform:translateX(-50%); 	/* IE 9 */
+    -moz-transform:translateX(-50%); 	/* Firefox */
+    -webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+    -o-transform:translateX(-50%);
     overflow: hidden;
     padding: 10px 0;
 }
@@ -458,18 +499,26 @@ ol.marked li.active {
     position: absolute;
     left: 2%;
     top: 50%;
-    transform: translateY(-50%)；
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%); 	/* IE 9 */
+    -moz-transform:translateY(-50%); 	/* Firefox */
+    -webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+    -o-transform:translateY(-50%);
 }
 
 .team .right img{
     position: absolute;
     right:6%;
     top: 50%;
-    transform: translateY(-50%)；
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%); 	/* IE 9 */
+    -moz-transform:translateY(-50%); 	/* Firefox */
+    -webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+    -o-transform:translateY(-50%);
 }
 
 .contactUs{
-    padding: 150px 10%;
+    padding: 100px 10%;
 }
 
 .contactUs .list{
@@ -537,6 +586,10 @@ ol.marked li.active {
 .list:hover .listback{
     background-image: url(../images/contantred.png);
     transform:scale(1.2);
+    -ms-transform:scale(1.2); 	/* IE 9 */
+    -moz-transform:scale(1.2); 	/* Firefox */
+    -webkit-transform:scale(1.2); /* Safari 和 Chrome */
+    -o-transform:scale(1.2);
 }
 
 .list:hover .listback i{
@@ -553,6 +606,19 @@ ol.marked li.active {
 }
 .youxiangText {
     line-height: 190px;
+}
+
+.footer{
+    position:absolute;
+    bottom: 80px;
+    width: 100%;
+    color: #fff;
+    left: 50%;
+    transform:translateX(-50%);
+    -ms-transform:translateX(-50%); 	/* IE 9 */
+    -moz-transform:translateX(-50%); 	/* Firefox */
+    -webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+    -o-transform:translateX(-50%);
 }
 
 @-webkit-keyframes starlight

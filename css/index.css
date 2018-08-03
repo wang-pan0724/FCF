@@ -398,6 +398,7 @@ ol.marked {
     -o-transform:translateX(-50%);
     overflow: hidden;
     padding: 10px 0;
+    z-index: 99;
 }
 ol.marked li {
     width: 42px !important;
@@ -493,6 +494,11 @@ ol.marked li.active {
     position: relative;
     width: 40%;
     margin: 5% auto;
+}
+
+.itemBack .imgwidth{
+    width: 51%;
+    margin: 2% auto;
 }
 
 .team .left img{
